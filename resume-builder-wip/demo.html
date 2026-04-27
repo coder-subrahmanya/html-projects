@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo - Resume Builder</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="demo.css">
+    </head>
+
+    <body>
+
+        <!-- 🚧 Demo Banner -->
+            <div class="demo-banner">
+            🚧 You are in Demo Mode. Play around! Create an account to  save your resume.
+                <a href="signup.html">
+                    <button>Sign Up to Save</button>
+                </a>
+            </div>
+
+            <div class="demo-nav">
+                <a href="index.html">← Back to Home</a>
+            </div>
+
+        <!-- 🧱 Main Workspace -->
+            <div class="workspace">
+
+                <!-- LEFT: Editor -->
+                <div class="editor">
+
+                    <label>Full Name</label>
+                    <input type="text" value="Alex Applicant">
+
+                    <label>Headline / Target Role</label>
+                    <input type="text" value="Junior Web Developer & Recent Graduate">
+
+                    <label>Professional Summary</label>
+
+                    <textarea>Highly motivated recent graduate with a passion for building clean, user-friendly web applications. Eager to  bring my problem-solving skills to a dynamic team.</textarea>
+
+                    <small class="hint">Keep it to 2-3 sentences highlighting your goals.</small>
+
+                    <label>Work Experience</label>
+
+                    <textarea>Web Design Intern - Student Media Group
+                    - Redesigned the university club portal
+                    - Built responsive landing pages</textarea>
+
+                    <small class="hint">Focus on achievements. Start with action verbs.</small>
+
+                    <button class="add-btn">+ Add Another Role</button>
+
+                    <label>Education</label>
+                    <input type="text" value="B.S. in Computer Science">
+
+                    <small class="hint">Add GPA only if it's strong (3.5+).</small>
+
+                    <button class="add-btn">+ Add Another Degree</button>
+
+                    <label>Core Skills</label>
+                    <input type="text" value="HTML, CSS, JavaScript, Teamwork">
+
+                </div>
+
+                <!-- RIGHT: Preview -->
+                <div class="preview">
+                    <div class="resume-paper">
+
+                        <h2>Alex Applicant</h2>
+                        <p>Junior Web Developer</p>
+
+                        <hr>
+
+                        <p>Summary will appear here...</p>
+
+                        <button class="locked">🔒 Download PDF</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+    </body>
+</html>
