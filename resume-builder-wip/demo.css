@@ -1,0 +1,129 @@
+.demo-banner {
+  background-color: #facc15;
+  color: black;
+  padding: 10px;
+  text-align: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* stays above everything */
+}
+
+.demo-banner button {
+  margin-left: 15px;
+  padding: 6px 12px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.workspace {
+  display: flex;
+  min-height: 100vh; /* change from height → min-height */
+}
+
+.editor {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #020617;
+
+  overflow-y: auto; 
+}
+
+.editor input,
+.editor textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: white;
+
+  text-align: left;
+  line-height: 1.5;
+  padding-right: 30px; /* space for scrollbar */
+}
+
+.preview {
+  width: 50%;
+  padding: 40px;
+  background-color: #020617; /* dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview h2 {
+  margin-bottom: 5px;
+}
+
+.preview p {
+  color: #cbd5e1;
+}
+
+.locked {
+  margin-top: 30px;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  color: #cbd5e1;
+}
+
+.hint {
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.demo-nav {
+  padding: 10px 20px;
+}
+
+.demo-nav a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.resume-paper {
+  background-color: white;
+  color: black;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+
+  position: sticky;
+  top: 100px; /* leaves space for banner */
+}
+
+.add-btn {
+  background: transparent;
+  border: 1px dashed #475569;
+  color: #cbd5e1;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.add-btn:hover {
+  border-color: #7c3aed;
+  color: #7c3aed;
+}
